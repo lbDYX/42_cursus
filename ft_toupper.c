@@ -1,20 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dacortes <dacortes@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/19 09:56:19 by dacortes          #+#    #+#             */
-/*   Updated: 2022/09/19 10:02:11 by dacortes         ###   ########.fr       */
+/*   Created: 2022/09/21 11:32:47 by dacortes          #+#    #+#             */
+/*   Updated: 2022/09/21 12:53:41 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include"libft.h"
 
-int	ft_isdigit(int c)
+int	ft_toupper(int c)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
+	if (c >= 'a' && c <= 'z')
+		return (c - 32);
 	else
-		return (0);
+		return (c);
 }

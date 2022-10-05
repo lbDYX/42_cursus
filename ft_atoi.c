@@ -1,20 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dacortes <dacortes@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/19 09:56:19 by dacortes          #+#    #+#             */
-/*   Updated: 2022/09/19 10:02:11 by dacortes         ###   ########.fr       */
+/*   Created: 2022/09/26 10:42:21 by dacortes          #+#    #+#             */
+/*   Updated: 2022/09/26 11:41:56 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include"libft.h"
 
-int	ft_isdigit(int c)
+int	ft_atoi(const char *str)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
-	else
-		return (0);
+	int			s;
+	size_t		c;
+	long int	r;
+
+	s = 1;
+	c = 0;
+	r = 0;
+	while (str[c] && (str[c] == ' ' || str[c] == '\n'
+			|| str[c] == '\t' || str[c] == '\v' || str[c] == '\f'
+			|| str[c] == '\r'))
+			c++;
+	if (str[c] == '+' || str[c] == '-')
+		if (str[c++] == '-')
+			s *= -1;
+	while (ft_isdigit(str[c]))
+	{
+		r = (r * 10) + str[c] - 48;
+		c++;
+	}
+	return (s * r);
 }
