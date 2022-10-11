@@ -6,10 +6,11 @@
 /*   By: dacortes <dacortes@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/22 16:09:03 by dacortes          #+#    #+#             */
-/*   Updated: 2022/09/28 13:39:14 by dacortes         ###   ########.fr       */
+/*   Updated: 2022/10/11 11:03:07 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+/*La función compara el s1 y el s2 y retorna su diferencia a partir del largo 
+ que se pasa como parámetro que seria el final de la comparación.*/
 #include"libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)

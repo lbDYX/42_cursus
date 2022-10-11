@@ -6,9 +6,10 @@
 /*   By: dacortes <dacortes@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 10:13:41 by dacortes          #+#    #+#             */
-/*   Updated: 2022/09/21 12:20:58 by dacortes         ###   ########.fr       */
+/*   Updated: 2022/10/11 09:06:28 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*La función retorna el largo de un str.*/
 
 #include"libft.h"
 

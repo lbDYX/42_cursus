@@ -1,4 +1,6 @@
+#Para la creainón de variables es con = y para hacer una regla es :
 NAME	=	libft.a
+#Funciones obligatorias
 SRCS	=	ft_isalnum.c\
 				ft_isalpha.c\
 				ft_isascii.c\
@@ -45,7 +47,7 @@ BONUS = ft_lstnew.c\
 CC	=	gcc
 RM	=	rm -rf
 FLAGS	=	-Wall -Wextra -Werror
-#Crea y mantiene archivos de biblioteca
+#Crea y mantiene archivos de biblioteca .o = objeto .d = dipendecia
 LIBC	=	ar -rcs
 OBJT	=	$(SRCS:.c=.o)
 DEPT = $(SRCS:.c=.d)

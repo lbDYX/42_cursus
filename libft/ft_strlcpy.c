@@ -6,9 +6,15 @@
 /*   By: dacortes <dacortes@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 10:05:50 by dacortes          #+#    #+#             */
-/*   Updated: 2022/09/27 12:46:12 by dacortes         ###   ########.fr       */
+/*   Updated: 2022/10/11 10:30:03 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*Toma el largo del dst y garantiza la terminación de null, después realiza 
+la copia.
+Se verifica el tamaño del src y se pregunta si el dstsize == 0 si es igual 
+retorna el len de lo que intento copiar, de lo contrario realiza la copia y se 
+garantiza que termine en null al finalizar la copia, retorna el len de lo que 
+se copió.*/
 
 #include"libft.h"
 
