@@ -6,9 +6,12 @@
 /*   By: dacortes <dacortes@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/23 15:45:23 by dacortes          #+#    #+#             */
-/*   Updated: 2022/09/28 16:04:18 by dacortes         ###   ########.fr       */
+/*   Updated: 2022/10/13 11:18:02 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*Localiza la primera ocurrencia de la terminación de NULL del needle y la de 
+haystack. Donde no se busca más del len pasado como parámetro.*/
+
 #include"libft.h"
 
 char	*ft_strnstr(const char *h, const char *n, size_t len)

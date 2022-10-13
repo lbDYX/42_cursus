@@ -6,9 +6,11 @@
 /*   By: dacortes <dacortes@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/23 14:34:09 by dacortes          #+#    #+#             */
-/*   Updated: 2022/09/28 12:09:51 by dacortes         ###   ########.fr       */
+/*   Updated: 2022/10/13 11:05:09 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*Compara los n caracteres pasados como parámetro del puntero el cual señala s1 
+y s2, (los caracteres que sigan a un carácter nulo no son comparados)*/
 
 #include"libft.h"
 
