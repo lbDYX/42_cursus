@@ -1,30 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_type_cps.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dacortes <dacortes@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/03 15:39:32 by dacortes          #+#    #+#             */
-/*   Updated: 2022/10/20 16:45:03 by dacortes         ###   ########.fr       */
+/*   Created: 2022/10/18 16:17:07 by dacortes          #+#    #+#             */
+/*   Updated: 2022/10/22 09:29:32 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include"libftprintf.h"
 
-void	ft_putnbr_fd(int nb, int fd)
+int	ft_putchar(int c, int print_f)
 {
-	if (nb == -2147483648)
-		ft_putstr_fd("-2147483648", fd);
-	else
+	if (write(1, &c, 1) != 1)
+		return (-1);
+	print_f++;
+	return (print_f);
+}
+
+int	ft_putstr(char *str, int print_f)
+{
+	int	i;
+
+	i = 0;
+	if (!str)
+		str = "(null)";
+	while (str[i])
 	{
-		if (nb < 0)
-		{
-			ft_putchar_fd('-', fd);
-			nb *= -1;
-		}
-		if (nb > 9)
-			ft_putnbr_fd((nb / 10), fd);
-		ft_putchar_fd((nb % 10) + 48, fd);
+		print_f = ft_putchar(str[i++], print_f);
+		if (print_f == -1)
+			return (-1);
 	}
+	return (print_f);
 }
