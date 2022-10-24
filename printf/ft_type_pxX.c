@@ -6,7 +6,7 @@
 /*   By: dacortes <dacortes@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 09:15:05 by dacortes          #+#    #+#             */
-/*   Updated: 2022/10/22 12:27:51 by dacortes         ###   ########.fr       */
+/*   Updated: 2022/10/24 14:34:07 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_converhex(unsigned long int hex, int print_f)
 	return (print_f);
 }
 
-int	ft_puttypex(unsigned long int hex, int print_f)
+int	ft_puttypex(unsigned int hex, int print_f)
 {
 	char	*base;
 

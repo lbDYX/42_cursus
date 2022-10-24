@@ -6,7 +6,7 @@
 /*   By: dacortes <dacortes@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 11:29:25 by dacortes          #+#    #+#             */
-/*   Updated: 2022/10/22 12:27:49 by dacortes         ###   ########.fr       */
+/*   Updated: 2022/10/24 14:34:03 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFTPRINTF_H
@@ -21,7 +21,7 @@ int	ft_putchar(int c, int print_f);
 int	ft_putstr(char *str, int print_f);
 //imprimir hexa y punteros
 int	ft_putptr(void *ptr, int print_f);
-int	ft_puttypex(unsigned long int hex, int print_f);
+int	ft_puttypex(unsigned int hex, int print_f);
 int	ft_converhe_x(unsigned int hex, int print_f);
 //para imprimir int y unisigned int
 int	ft_puttype_id(int num, int print_f);

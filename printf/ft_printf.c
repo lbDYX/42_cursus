@@ -6,7 +6,7 @@
 /*   By: dacortes <dacortes@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 13:32:56 by dacortes          #+#    #+#             */
-/*   Updated: 2022/10/22 12:32:08 by dacortes         ###   ########.fr       */
+/*   Updated: 2022/10/24 14:34:00 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	ft_type(va_list arg, char const type, int print_f)
 	if (type == 'u')
 		print_f = ft_putnum(va_arg(arg, unsigned int), print_f);
 	if (type == 'x')
-		print_f = ft_puttypex(va_arg(arg, unsigned long int), print_f);
+		print_f = ft_puttypex(va_arg(arg, unsigned int), print_f);
 	if (type == 'X')
 		print_f = ft_converhe_x(va_arg(arg, unsigned int), print_f);
 	return (print_f);
