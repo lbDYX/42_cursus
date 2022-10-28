@@ -15,17 +15,18 @@ El proyecto se divide 6 archivos, los cuales son:
 <br>
 <b>ft_printf.c :</b> Contiene la función principal, una función para buscar el '%' y otra para llamar las funciones con el tipo de formato que se va aplicar.
 <br>
-<b>ft_type_cs.c :</b> Contiene dos funciones una para imprimir los chars y otra para los strings, se tiene en cuenta si write llegara a fallar retornando -1 en caso de que falle.<br>
+<b>ft_type_cs.c :</b> Contiene dos funciones, una para imprimir los chars y otra para los strings, se tiene en cuenta si <b>write</b> llegara a fallar retornando -1 en caso de que falle.<br>
 
 <code>
 &nbspif(write(1, &c, 1) == -1)
-<br>&nbsp&nbsp
-return (-1);</br>
+
+  
+  return (-1);
 </code><br>
 <b>ft_type_idu.c :</b> Contiene dos funciones una que se encarga de imprimir los números negativos y otra para los positivos.<br>
 <br>
-<b>ft_type_pxX.c :</b> Contiene cuatro funciones tres de ellas se encargan de convertir a hexadecimal y la otra se encarga de imprimir los punteros.<br>
+<b>ft_type_pxX.c :</b> Contiene cuatro funciones, tres de ellas se encargan de convertir a hexadecimal y la otra se encarga de imprimir los punteros.<br>
 <b>Makefile :</b> Contiene las reglas para compilar el proyecto.<br>
-<b>NOTA:</b> para verificar el proyecto antes de entregarlo se realizan pruebas con el programa de <a href="https://github.com/xicodomingues/francinette"><b>francinette</b></a>.
+<b>NOTA:</b> Para verificar el proyecto antes de entregarlo se realizan pruebas con el programa de <a href="https://github.com/xicodomingues/francinette"><b>francinette</b></a>.
 </p>
 
