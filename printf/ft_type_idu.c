@@ -6,11 +6,11 @@
 /*   By: dacortes <dacortes@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 09:15:45 by dacortes          #+#    #+#             */
-/*   Updated: 2022/10/24 14:18:35 by dacortes         ###   ########.fr       */
+/*   Updated: 2022/10/28 11:25:38 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libftprintf.h"
+#include"ft_printf.h"
 
 int	ft_puttype_id(int num, int print_f)
 {
