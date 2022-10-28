@@ -7,7 +7,7 @@ para resolver este proyecto se tomo como base la información de la siguiente pa
 <a href="http://www.it.uc3m.es/pbasanta/asng/course_notes/input_output_printf_es.html"><b>La función printf.</b></a></p>
 <img src="https://miro.medium.com/max/1400/1*jB76MLZjiNhGSQQvxm7LSQ.gif" alt="drawing" width="800" height="150"/><h1></h1>
 <!--Explicacion ft_printf-->
-<h2><b>ft_printf:</b></h2><h1></h1>
+<h2><b>ft_printf:</b></h2>
 <p align="left">
 El proyecto se divide 6 archivos, los cuales son:
 <br>
