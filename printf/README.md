@@ -5,7 +5,7 @@
 La función <b>printf</b> imprime por pantalla utilizando una <b>"cadena de formato"</b> que incluye las instruciones para mezclar múltiples cadenas.
 para resolver este proyecto se tomo como base la información de la siguiente pagina web:
 <a href="http://www.it.uc3m.es/pbasanta/asng/course_notes/input_output_printf_es.html"><b>La función printf.</b></a></p>
-<img src="https://miro.medium.com/max/1400/1*jB76MLZjiNhGSQQvxm7LSQ.gif" alt="drawing" width="600" height="150"/><h1></h1>
+<img src="https://miro.medium.com/max/1400/1*jB76MLZjiNhGSQQvxm7LSQ.gif" alt="drawing" width="800" height="150"/><h1></h1>
 <!--Explicacion ft_printf-->
 <h2><b>ft_printf:</b></h2><h1></h1>
 <p align="left">
@@ -19,7 +19,8 @@ El proyecto se divide 6 archivos, los cuales son:
 
 <code>
 &nbspif(write(1, &c, 1) == -1)
-<br>&nbsp&nbspreturn (-1);</br>
+<br>&nbsp&nbsp
+return (-1);</br>
 </code><br>
 <b>ft_type_idu.c :</b> Contiene dos funciones una que se encarga de imprimir los números negativos y otra para los positivos.<br>
 <br>
