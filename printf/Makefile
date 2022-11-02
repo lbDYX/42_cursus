@@ -19,20 +19,19 @@ ligth = \033[1m
 dark = \033[2m
 italic = \033[3m
 
-#Rules
 OBJT	=	$(SRCS:.c=.o)
 DEPT = $(SRCS:.c=.d)
 all:	$(NAME)
 -include $(DEPT)
 
-#Compilar
+#Rules
 %.o:%.c
 	$(CC) -MMD $(FLAGS) -c $< -o $@
 $(NAME):	${OBJT}
 	$(LIBC) $(NAME) $(OBJT)
 	@echo "$(GREEN)$(ligth)Creación de la libreria OK$(END)"
 
-#limpiar archivos
+#clean fd
 .PHONY: clean fclean re
 fclean: 
 	$(RM) $(NAME)
