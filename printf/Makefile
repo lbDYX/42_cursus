@@ -33,7 +33,7 @@ $(NAME):	${OBJT}
 
 #clean fd
 .PHONY: clean fclean re
-fclean: 
+fclean: clean
 	$(RM) $(NAME)
 	@echo "$(YELLOW)$(ligth)Programa eliminado$(END)"
 clean:
