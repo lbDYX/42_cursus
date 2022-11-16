@@ -21,7 +21,7 @@ char	*ft_next_line(char *buf, char *line)
 		return (NULL);
 	while (buf[len] && buf[len] != '\n')
 		len++;
-	while (buf[len] && buf[len] == '\n')
+	if (buf[len] == '\n')
 		len++;
 	line = ft_calloc(len + 1, sizeof(char));
 	if (!line)
