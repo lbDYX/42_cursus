@@ -20,7 +20,7 @@
 #define BLUE "\033[34m"
 
 #define ligth "\033[1m"
-#define dark = "\033[2m"
+#define dark  "\033[2m"
 #define italic "\033[3m"
 
 int	main(void)
