@@ -64,8 +64,6 @@ char	*ft_strjoin(char *s1, char *s2)
 	n_str = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
 	if (!n_str)
 		return (NULL);
-	i = 0;
-	j = 0;
 	while (s1[i])
 		n_str[j++] = s1[i++];
 	i = 0;
