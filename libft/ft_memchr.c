@@ -9,9 +9,6 @@
 /*   Updated: 2022/10/11 10:55:56 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Busca la primera ocurrencia de c, convierte a unsigned char el valor a
-retornar, si no encuentra el carácter solicitado retorna NULL.*/
-
 #include"libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
