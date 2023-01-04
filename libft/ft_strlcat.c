@@ -9,13 +9,6 @@
 /*   Updated: 2022/10/11 10:47:14 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Agrega la cadena de src al final de dst se agregará como máximo del dstsize.
-Se pregunta si el size es mayor al len del dst, se crea una variable resultado 
-en caso de que sea mayor el resultado será igual a la suma del los len del dst 
-y src de lo contrario será igual al len del src más el size, se realiza la copia 
-a partir de la última posición del dst y se garantiza la terminación en null 
-de la copia, retorna el len total de la copia (resultado).*/
-
 #include"libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
