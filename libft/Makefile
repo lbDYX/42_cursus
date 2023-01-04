@@ -59,7 +59,6 @@ $(NAME):	${OBJT}
 	$(LIBC) $(NAME) $(OBJT)
 bonus:  ${OBJT} ${OBJTS}
 	$(LIBC) $(NAME) $(OBJT) $(OBJTS)
-#Comandos para eliminar los archivos generados
 fclean: clean
 	$(RM) $(NAME)
 clean:
