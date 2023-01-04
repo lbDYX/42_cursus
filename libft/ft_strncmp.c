@@ -9,9 +9,6 @@
 /*   Updated: 2022/10/13 11:05:09 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Compara los n caracteres pasados como parámetro del puntero el cual señala s1 
-y s2, (los caracteres que sigan a un carácter nulo no son comparados)*/
-
 #include"libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
