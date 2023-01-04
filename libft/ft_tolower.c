@@ -9,9 +9,6 @@
 /*   Updated: 2022/10/10 17:22:35 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*La función verifica si es una letra mayúscula y la convierte en minúscula de 
-lo contrario retorna el parámetro ingresado*/
-
 #include"libft.h"
 
 int	ft_tolower(int c)
