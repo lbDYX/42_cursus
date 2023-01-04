@@ -9,10 +9,6 @@
 /*   Updated: 2022/10/10 17:17:01 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/* La función verifica si es un número o una letra minúscula o mayúscula
- retornara 1 de lo contrario 0. Se utilizan las funciones ft_isalpha y 
-ft_isdigit para hacer el código más corto.*/
-
 #include"libft.h"
 
 int	ft_isalnum(int c)
