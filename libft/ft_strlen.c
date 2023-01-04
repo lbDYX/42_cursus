@@ -9,8 +9,6 @@
 /*   Updated: 2022/10/11 09:06:28 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*La función retorna el largo de un str.*/
-
 #include"libft.h"
 
 size_t	ft_strlen(const char *s)
