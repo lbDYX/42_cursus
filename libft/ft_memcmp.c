@@ -9,9 +9,6 @@
 /*   Updated: 2022/10/13 11:05:53 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*La función compara el s1 y el s2 y retorna su diferencia a partir del largo 
- que se pasa como parámetro que seria el final de la comparación.*/
-
 #include"libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
