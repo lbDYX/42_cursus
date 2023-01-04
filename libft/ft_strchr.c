@@ -9,10 +9,6 @@
 /*   Updated: 2022/10/13 11:28:24 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*La función localiza la primera ocurrencia de c y convierte a char el puntero 
- de s.
-Se reutiliza la función ft_memchr.*/
-
 #include"libft.h"
 
 char	*ft_strchr(const char *s, int c)
