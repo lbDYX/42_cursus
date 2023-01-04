@@ -9,9 +9,6 @@
 /*   Updated: 2022/10/13 11:18:02 by dacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Localiza la primera ocurrencia de la terminación de NULL del needle y la de 
-haystack. Donde no se busca más del len pasado como parámetro.*/
-
 #include"libft.h"
 
 char	*ft_strnstr(const char *h, const char *n, size_t len)
