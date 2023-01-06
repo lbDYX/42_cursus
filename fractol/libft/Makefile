@@ -24,18 +24,20 @@ SRCS	=	ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c\
 BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c\
 				ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c\
 				ft_lstclear.c ft_lstiter.c ft_lstmap.c
+D_OBJ = obj
 #.o
-#OBJ	=	$(SRCS:.c=.o)
-OBJ = $(SRCS:.c=.o)
-DEP = $(SRCS:.c=.d)
+OBJ = $(addprefix $(D_OBJ)/, $(SRCS:.c=.o))
+DEP = $(addprefix $(D_OBJ)/, $(SRCS:.c=.d))
 #Bonus .o
-B_OBJ = $(BONUS:.c=.o)
-B_DEP = $(SRCS:.c=.d)
-all:	$(NAME)
+B_OBJ = $(addprefix $(D_OBJ)/, $(BONUS:.c=.o))
+B_DEP = $(addprefix $(D_OBJ)/, $(BONUS:.c=.d))
+all:	dir $(NAME)
 -include $(DEP)
 -include $(B_DEP)
 
 #Rules
+dir: 
+	@mkdir -p $(D_OBJ)
 $(D_OBJ)/%.o:%.c
 	$(CC) -MMD $(FLAGS) -c $< -o $@
 $(NAME):	${OBJ}
@@ -50,6 +52,6 @@ fclean: clean
 	$(RM) $(NAME)
 	@echo -e "$(B)$(ligth)-->$(E)$(ligth)Full clean: $(Y)*.a$(E)"
 clean:
-	$(RM) $(OBJ) $(DEP) $(B_OBJ) $(B_DEP) 
+	$(RM) $(D_OBJ) bonus
 	@echo -e "$(B)$(ligth)-->$(E)$(ligth)Clean: $(Y)*.o, *.d$(E)"
 re: fclean all
