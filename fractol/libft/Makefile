@@ -42,11 +42,16 @@ $(D_OBJ)/%.o:%.c
 	$(CC) -MMD $(FLAGS) -c $< -o $@
 $(NAME):	${OBJ}
 	$(LIBC) $(NAME) $(OBJ)
+	@touch $(NAME)
 	@echo -e "$(B)$(ligth)-->$(G)Library created OK$(E)"
-bonus:  ${OBJ} ${B_OBJ}
-	$(LIBC) $(NAME) $(OBJ) $(B_OBJT)
-	@touch $@
-	@echo -e "$(B)$(ligth)-->$(G)Compiled bonus$(E)"
+bonus:	dir ${B_OBJ}
+	@if [ -f bonus ]; then\
+		echo -e "$(B)$(ligth)-->make:$(E)$(ligth) 'bonus' is up to date.$(E)";\
+	else\
+		$(LIBC) $(NAME) $(B_OBJ);\
+		touch bonus;\
+		echo -e "$(B)$(ligth)-->$(G)Bonus created OK$(E)";\
+	fi
 .PHONY: clean fclean re
 fclean: clean
 	$(RM) $(NAME)
