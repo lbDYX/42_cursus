@@ -40,16 +40,16 @@ $(D_OBJ)/%.o:%.c
 	$(CC) -MMD $(FLAGS) -c $< -o $@
 $(NAME):	${OBJ}
 	$(LIBC) $(NAME) $(OBJ)
-	@echo "$(B)$(ligth)-->$(G)Library created OK$(E)"
+	@echo -e "$(B)$(ligth)-->$(G)Library created OK$(E)"
 bonus:  ${OBJ} ${B_OBJ}
 	$(LIBC) $(NAME) $(OBJ) $(B_OBJT)
 	@touch $@
-	@echo "$(B)$(ligth)-->$(G)Compiled bonus$(E)"
+	@echo -e "$(B)$(ligth)-->$(G)Compiled bonus$(E)"
 .PHONY: clean fclean re
 fclean: clean
 	$(RM) $(NAME)
-	@echo "$(B)$(ligth)-->$(E)$(ligth)Full clean: $(Y)*.a$(E)"
+	@echo -e "$(B)$(ligth)-->$(E)$(ligth)Full clean: $(Y)*.a$(E)"
 clean:
 	$(RM) $(OBJ) $(DEP) $(B_OBJ) $(B_DEP) 
-	@echo "$(B)$(ligth)-->$(E)$(ligth)Clean: $(Y)*.o, *.d$(E)"
+	@echo -e "$(B)$(ligth)-->$(E)$(ligth)Clean: $(Y)*.o, *.d$(E)"
 re: fclean all
